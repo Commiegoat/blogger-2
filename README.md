@@ -1,0 +1,1 @@
+This is my first Rails application, completed for the Odin Project curriculum.  Here we go!!
