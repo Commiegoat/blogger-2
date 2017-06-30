@@ -1,9 +1,17 @@
-<h1>All Articles</h1>
+<h1>First Blog</h1>
 
+<div id="intro"><h3>Introduction</h3>
+Well, I'm learning to code, and this is my first attempt at a blog.  I used the blogger (2) tutorial found at <a href="http://tutorials.jumpstartlab.com/projects/blogger.html">jumpstartlab</a>.  I'm doing this as part of <a href="http://www.theodinproject.com">The Odin Project</a>.  Thanks for looking!
+
+-ISO
+</div>
+<h2>All Articles:</h2>
 <ul id="articles">
 <% @articles.each do |article| %>
 	<li>
-		<%= link_to article.title, article_path(article), class: 'article_title' %>
+		<%= link_to article.title, article_path(article), class: 'article_title' %> 
+		Created: <%= article.created_at.strftime("%m/%d/%y at %I:%M%p") %>
+		
 	</li>
 <% end %>
 </ul>

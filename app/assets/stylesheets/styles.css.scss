@@ -34,3 +34,23 @@ a {
   clear: both;
   padding-top: 20px;
 }
+
+#sidebar {
+  border:1px solid black;
+  border-radius:7px;
+  background-color:#fff;
+  display:inline-block;
+  top:150px;
+}
+
+#intro {
+  display:inline-block;
+  border:2px solid gray;
+  border-radius:7px;
+  padding:5px;
+}
+
+th, tr, td{
+  border:1px solid gray;
+  padding:5px;
+}

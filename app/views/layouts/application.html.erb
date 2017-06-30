@@ -9,17 +9,26 @@
   </head>
 
   <body>
+      <div id="sidebar">
+        <ul>
+          <h3>Navigation</h3>
+          <li><%= link_to "Article Listing", articles_path %></li>
+          <li><%= link_to "Topic Tags", tags_path %></li>
+        </ul>
+      </div>
     <p class="flash"><%= flash.notice %></p>
     <div id="container">
+
       <div id="content">
+
         <%= yield %>
+
         <hr>
         <h6>
           <% if logged_in? %>
             <%= "Logged in as #{current_user.email}" %>
             <%= link_to "(logout)", logout_path %>
           <% else %>
-            Logged out
             <%= link_to "(login)", login_path %>
           <% end %>
         </h6>
